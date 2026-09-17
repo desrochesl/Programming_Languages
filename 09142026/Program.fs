@@ -31,7 +31,7 @@ let grade_checker (grade: int) =
         if (grade >= 90) then "A"
         else if (grade >= 80) then "B"
         else if (grade >= 70) then "C"
-        else if (grade >= 60) then "C"
+        else if (grade >= 60) then "D"
         else "Fail"
 
     printfn "Your grade is: %s" gradeStatus 
