@@ -15,8 +15,6 @@ let equality_checker ()  =
 
     printfn "%s" result
 
-    0
-
 let temperature_checker (temp: int) =
     let weatherStatus = 
         if (temp <= 0) then "freezing"
@@ -42,10 +40,10 @@ let main argv =
     printfn "%d squared is: %d!" 12 (square 12)
 
     // 09-15-2026
-    equality_checker() |> ignore
+    equality_checker()  
 
-    temperature_checker(2) |> ignore
+    temperature_checker(2) 
 
-    grade_checker(87) |> ignore
+    grade_checker(87) 
 
     0
