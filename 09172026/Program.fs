@@ -1,8 +1,8 @@
 ﻿[<EntryPoint>]
-let main argv = 
+let main argv =
     let temp = 0
 
-    let weatherReport = 
+    let weatherReport =
         match temp with
         | t when t < 0 -> "freezing"
         | t when t < 15 -> "cold"
@@ -11,7 +11,7 @@ let main argv =
 
     let dayNumber = 4
 
-    let dayName = 
+    let dayName =
         match dayNumber with
         | 1 -> "Monday"
         | 2 -> "Tuesday"
@@ -36,15 +36,15 @@ let main argv =
     let password = "abd"
     let username = "desrochesl"
 
-    let access = 
+    let access =
         match (username, password) with
         | (u, p) when u = "desrochesl" && p = "abd" -> "access granted"
-        | (u,_) when u = "desrochesl" -> "access denied: password doesn't match"
-        | (_,_) -> "Access Denied"
+        | (u, _) when u = "desrochesl" -> "access denied: password doesn't match"
+        | (_, _) -> "Access Denied"
 
 
     printfn "It is %s outside today\n\n" weatherReport
-    
+
 
     printfn "Today is %s\n\n" dayName
 
