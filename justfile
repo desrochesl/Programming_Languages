@@ -1,9 +1,11 @@
-sep14:
-    dotnet run --project ./09142026/
+@run project: 
+    echo "Running F# project {{project}}\n\n"
+    dotnet run --project {{project}}
 
-sep17:
-    dotnet run --project ./09172026/
+@fsi: 
+    echo "Running F# interactive terminal"
+    dotnet fsi
 
-run: 
-    dotnet run
-
+@new project: 
+    echo "Creating new project {{project}}"
+    dotnet new console -lang "F#" -o {{project}}
