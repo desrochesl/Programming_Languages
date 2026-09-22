@@ -10,9 +10,12 @@ the `let` keyword is used to create variables, and functions.
 
 ### dotnet
 ```sh
-dotnet run --project {{project_dir}} # dotnet run gives the user more options than the justfile. Use justfile if you just need to run the project. 
+dotnet run --project {{project_dir}} # run an F# project
 
+# Open interactive terminal
 dotnet fsi
+# run .fsx file
+dotnet fsi {{file_name}}
 
 # Create a new F# project
 dotnet new console -lang "F#" -o {{project_name}}
@@ -31,6 +34,10 @@ just new {{project_name}}
 ```
 
 ## Projects
+### Classwork
+This folder is dedicated to storing my in class work, the files are organized by week starting at week 2. 
+
+I used .fsx files to run the files individually instead of creating a new project for every single day. 
 ### Lab 1
 **Functions**:
 - addTwo

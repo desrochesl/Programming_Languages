@@ -1,6 +1,3 @@
-﻿// For more information see https://aka.ms/fsharp-console-apps
-module HelloSquare
-
 let square x = x * x
 
 
@@ -34,16 +31,14 @@ let grade_checker (grade: int) =
 
     printfn "Your grade is: %s" gradeStatus
 
-[<EntryPoint>]
-let main argv =
-    // 09-14-2026
-    printfn "%d squared is: %d!" 12 (square 12)
+// 09-14-2026
+printfn "%d squared is: %d!" 12 (square 12)
 
-    // 09-15-2026
-    equality_checker ()
+// 09-15-2026
+equality_checker ()
 
-    temperature_checker (2)
+temperature_checker (2)
 
-    grade_checker (87)
+grade_checker (87)
 
-    0
+0
